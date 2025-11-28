@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ad-booking
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update  # Creează automat tabelele în baza de date
+    show-sql: true      # Vedem query-urile în consolă (bun pentru debug)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
